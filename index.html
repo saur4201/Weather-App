@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-container">
+    <header class="topbar">
+      <h1>Weather App</h1>
+      <div class="controls">
+        <div class="search">
+          <input id="cityInput" type="search" placeholder="Search city (e.g. London)" aria-label="Search city" />
+          <button id="searchBtn" title="Search">Search</button>
+        </div>
+        <button id="geoBtn" class="icon-btn" title="Use my location">My Location</button>
+        <div class="unit-toggle" title="Toggle units">
+          <button id="unitBtn">°C</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="message" class="message" aria-live="polite"></section>
+
+    <section id="currentWeather" class="card current-card hidden">
+      <div class="left">
+        <img id="weatherIcon" src="" alt="weather icon" />
+      </div>
+      <div class="right">
+        <div class="city">
+          <h2 id="cityName">City</h2>
+          <p id="description">Condition</p>
+        </div>
+        <div class="temps">
+          <div class="temp-main">
+            <span id="temp">--</span>
+            <span id="unitLabel">°C</span>
+          </div>
+          <div class="details">
+            <small>Feels: <span id="feels">--</span></small>
+            <small>Humidity: <span id="humidity">--</span>%</small>
+            <small>Wind: <span id="wind">--</span> m/s</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="forecast" class="forecast hidden">
+      <h3>5-day forecast</h3>
+      <div id="forecastList" class="forecast-list"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Data from OpenWeatherMap • Built with HTML/CSS/JS</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
