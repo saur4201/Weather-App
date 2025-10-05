@@ -23,4 +23,10 @@ Fetches current weather and a 5-day forecast using the OpenWeatherMap API. Inclu
    Then open `http://localhost:8000` (or the port you used).
 4. Alternatively, you can open `index.html` directly in some browsers but some features (fetch from `file://`) may be blocked.
 
+##**SCREENSHOTS**:-
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cc4f9ea6-7397-4520-b4fd-a34e873342b0" />
+
+
+
 ## File structure
